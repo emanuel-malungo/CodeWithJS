@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        link css
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--
+        link remix
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>simple calculator</title>
+</head>
+<body>
+    
+    <div class="content_calculator"> 
+        <header>
+            <input type="text" class="display" id="entry" disabled>
+            <input type="text" class="display" id="result" disabled>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <td><button onclick="cleanElements()" >C</button></td>
+                    <td><button onclick="removeElements()" ><i class="ri-delete-back-2-line"></i></button></td>
+                    <td><button onclick="insertElements('%')" >%</button></td>
+                    <td><button onclick="insertElements('/')"  class="operator" ><i class="ri-divide-line"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insertElements('7')" >7</button></td>
+                    <td><button onclick="insertElements('8')" >8</button></td>
+                    <td><button onclick="insertElements('9')" >9</button></td>
+                    <td><button onclick="insertElements('*')"  class="operator" >X</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insertElements('4')" >4</button></td>
+                    <td><button onclick="insertElements('5')" >5</button></td>
+                    <td><button onclick="insertElements('6')" >6</button></td>
+                    <td><button onclick="insertElements('-')"  class="operator" >-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insertElements('1')" >1</button></td>
+                    <td><button onclick="insertElements('2')" >2</button></td>
+                    <td><button onclick="insertElements('3')" >3</button></td>
+                    <td><button onclick="insertElements('+')"  class="operator" >+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" ><button onclick="insertElements('0')" class="space-2" >0</button></td>
+                    <td><button onclick="insertElements(',')" >.</button></td>
+                    <td><button onclick="insertElements('=')" class="operator" >=</button></td>
+                </tr>
+            </table>
+        </main>
+    </div>
+
+    <!--
+        script js
+    -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
