@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>IMC Calculator</title>
+</head>
+<body>
+    <div class="content">
+        <div class="content_inputs">
+            <h2>Entrada de dados</h2>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite o seu nome">
+            <label for="weight">Peso:</label>
+            <input type="text" id="weight" placeholder="Digite o teu peso (kg)">
+            <label for="height">Altura:</label>
+            <input type="text" id="height" placeholder="Digite a tua altura (m)">
+            <label for="age">Idade:</label>
+            <input type="text" id="age" placeholder="Digite a tua idade">
+            <label for="gender">Gênero:</label>
+            <select id="gender">
+                <option value="Masculino" selected>Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+        </div>
+        <div class="content_result">
+            <h1 class="title-result">Resultado do Cálculo do IMC</h1>
+            <div class="content_image">
+                <img width="400px" src="./assets/img/image.png" alt="">
+            </div>
+            <ul class="list">
+                <li><p><strong>IMC:</strong> 22.86</p></li>
+                <li><p><strong>Classificação:</strong> Peso Normal</p></li>
+            </ul>
+            <p class="text__result">Seu IMC é 22.86, o que está na faixa de peso normal. Continue mantendo um estilo de vida saudável!</p>
+        </div>
+        <div class="content_calc">
+            <p>Preencha todos os campos e clique em calcular...</p>
+            <button class="btn__calc">Calcular IMC</button>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
