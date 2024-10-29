@@ -8,39 +8,41 @@
     <title>IMC Calculator</title>
 </head>
 <body>
-    <div class="content">
-        <div class="content_inputs">
-            <h2>Entrada de dados</h2>
+    <main class="calculator-container">
+        <section class="input-section">
+            <h2>Dados de Entrada</h2>
             <label for="name">Nome:</label>
             <input type="text" id="name" placeholder="Digite o seu nome">
-            <label for="weight">Peso:</label>
-            <input type="text" id="weight" placeholder="Digite o teu peso (kg)">
-            <label for="height">Altura:</label>
-            <input type="text" id="height" placeholder="Digite a tua altura (m)">
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" placeholder="Digite o seu peso (kg)">
+            <label for="height">Altura (m):</label>
+            <input type="number" step="0.01" id="height" placeholder="Digite a sua altura (m)">
             <label for="age">Idade:</label>
-            <input type="text" id="age" placeholder="Digite a tua idade">
+            <input type="number" id="age" placeholder="Digite a sua idade">
             <label for="gender">Gênero:</label>
             <select id="gender">
                 <option value="Masculino" selected>Masculino</option>
                 <option value="Feminino">Feminino</option>
             </select>
-        </div>
-        <div class="content_result">
-            <h1 class="title-result">Resultado do Cálculo do IMC</h1>
-            <div class="content_image">
-                <img width="400px" src="./assets/img/image.png" alt="">
+        </section>
+
+        <section class="result-section">
+            <h1 class="result-title">Resultado do IMC</h1>
+            <div class="result-image">
+                <img width="400px" src="./assets/img/image.png" alt="Imagem ilustrativa">
             </div>
-            <ul class="list">
-                <li><p><strong>IMC:</strong> 22.86</p></li>
-                <li><p><strong>Classificação:</strong> Peso Normal</p></li>
+            <ul class="result-list">
+                <li><strong>IMC:</strong> <span id="imc-value">22.86</span></li>
+                <li><strong>Classificação:</strong> <span id="classification">Peso Normal</span></li>
             </ul>
-            <p class="text__result">Seu IMC é 22.86, o que está na faixa de peso normal. Continue mantendo um estilo de vida saudável!</p>
-        </div>
-        <div class="content_calc">
+            <p class="result-text">Seu IMC é <span id="imc-value-text">22.86</span>, o que está na faixa de peso normal. Continue mantendo um estilo de vida saudável!</p>
+        </section>
+
+        <div class="calculate-section">
             <p>Preencha todos os campos e clique em calcular...</p>
-            <button class="btn__calc">Calcular IMC</button>
+            <button class="calculate-button">Calcular IMC</button>
         </div>
-    </div>
+    </main>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
