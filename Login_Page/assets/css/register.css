@@ -1,0 +1,126 @@
+/* Importação de fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Reset e estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: #F7F6F4;
+}
+
+a {
+    text-decoration: none;
+    color: #08817F;
+}
+
+input, button, select {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: inherit;
+}
+
+/* Estilo do contêiner de registro */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Cabeçalho de registro */
+.register-header .logo {
+    font-size: 3rem;
+    color: #08817F;
+    margin-bottom: 0.5rem;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #08817F;
+}
+
+.register-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FF5454;
+    margin-top: 0.5rem;
+}
+
+.register-subtitle {
+    font-size: 0.9rem;
+    color: #707070;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos dos campos de entrada */
+.register-inputs .input-group {
+    position: relative;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    background-color: #F7F7F7;
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+.input-group i {
+    font-size: 1.2rem;
+    color: #707070;
+    margin-right: 0.5rem;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Estilos do botão de registro */
+.btn-submit {
+    width: 100%;
+    padding: 0.8rem;
+    color: #FFFFFF;
+    background-color: #08817F;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #066D67;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: #FF5454;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Rodapé do registro */
+.register-footer {
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    color: #707070;
+}
+
+.footer-text a {
+    font-weight: 600;
+}
