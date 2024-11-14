@@ -1,0 +1,67 @@
+@import url(reset.css);
+
+
+
+#main-login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__form{
+    width: 250px;
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+}
+
+.form__btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.form__btns button{
+    height: 50px;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--color-white);
+    background-color: #31c9bc;
+}
+.form__btns .btn__sign{
+    border: 1px solid #31c9bc;
+    background-color: rgb(43, 41, 39);
+}
+
+.box-input{
+    gap: 5px;
+    height: 50px;
+    display: flex;
+    padding: 0 20px;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+    background-color: rgb(43, 41, 39);
+}
+
+.form__input{
+    color: var(--color-white);
+}
+
+.btn__submit{
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: var(--color-white);
+    background-color: #31c9bc;
+}
+
+.hide{
+    display: none;
+}

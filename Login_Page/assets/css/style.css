@@ -1,0 +1,141 @@
+/* ====================== Google Fonts ========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oleo+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+/* ====================== Variáveis de Cores ========================== */
+:root {
+    --primary-color: #08817F;
+    --secondary-color: #FF5454;
+    --neutral-light: #F7F6F4;
+    --background-color: #ffffff;
+    --text-color: #707070;
+    --input-background: #f7f7f7;
+    --button-background: #08817F;
+    --button-hover-background: #066C62;
+    --border-radius: 5px;
+}
+
+/* ====================== Estilos Globais ========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--neutral-light);
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button {
+    border: none;
+    background-color: transparent;
+}
+
+input {
+    outline: none;
+}
+
+/* ====================== Login Container ========================== */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ====================== Form ========================== */
+.login-form {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 7px 2px rgb(245, 238, 238);
+}
+
+/* ====================== Header ========================== */
+.login-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+.logo-text {
+    font-weight: 600;
+}
+
+.login-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+    font-size: 12px;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+/* ====================== Input Groups ========================== */
+.input-group {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--border-radius);
+    background-color: var(--input-background);
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    width: 90%;
+}
+
+.input-group i {
+    font-size: 18px;
+}
+
+/* ====================== Submit Button ========================== */
+.btn-submit {
+    padding: 15px;
+    color: white;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--button-background);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+	cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--button-hover-background);
+}
+
+/* ====================== Footer ========================== */
+.login-footer {
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.footer-text a {
+    color: var(--primary-color);
+}

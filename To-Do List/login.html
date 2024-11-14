@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        link css
+    -->
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <!-- 
+        link remixicon
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <title>To-Do List emaLungo | Login page</title>
+</head>
+<body id="body-login" >
+    <main class="main__login" id="main-login" >
+        <form action="" class="content__form">
+            <div class="form__btns" >
+                <button class="btn__login" id="btn-login" >Login</button>
+                <button class="btn__sign" id="btn-sign" >Sign Up</button>
+            </div>
+            <div class="box-input" >
+                <i class="ri-user-3-line"></i>
+                <input type="email" class="form__input" name="email" id="email" placeholder="Digite o seu email">
+            </div>
+            <div class="box-input" >
+                <i class="ri-lock-password-line"></i>
+                <input type="password" class="form__input" name="password" id="password" placeholder="Digite a sua senha">
+            </div>
+            <div class="box-input hide" id="box-input-sign">
+                <i class="ri-lock-password-line"></i>
+                <input type="password" class="form__input" name="password" id="password" placeholder="Confirma a sua senha">
+            </div>
+            <button class="btn__submit" type="submit">Login</button>
+        </form>
+    </main>
+
+    <!-- 
+        scrip js login
+    -->
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>
